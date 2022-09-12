@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+body {
+margin:0;
+padding:0;
+overflow:hidden;
+
+}
+section{
+height:100%;
+width:100%;
+  position:absolute ;  background:radial-gradient(#333,#000);
+}
+.leaf{
+    position:absolute ;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.leaf div{
+position:absolute ;
+display:block ;
+}
+.leaf div:nth-child(1){
+    left:20%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-2s;
+
+}
+.leaf div:nth-child(2){
+    left:70%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+.leaf div:nth-child(3){
+    left:10%; 
+    animation:fall 20s linear infinite ;
+    animation-delay:-7s;
+    
+}
+.leaf div:nth-child(4){
+    left:50%; 
+   animation:fall 18s linear infinite ; 
+   animation-delay:-5s;
+}
+.leaf div:nth-child(5){
+    left:85%; 
+    animation:fall 14s linear infinite ;
+    animation-delay:-5s;
+}
+.leaf div:nth-child(6){
+    left:15%; 
+    animation:fall 16s linear infinite ;
+    animation-delay:-10s;
+}
+.leaf div:nth-child(7){
+    left:90%; 
+    animation:fall 15s linear infinite ;
+    animation-delay:-4s;
+}
+
+@keyframes fall{
+    0%{
+        opacity:1;
+        top:-10%;
+        transform:translateX (20px) rotate(0deg);
+    }
+    20%{
+        opacity:0.8;
+        transform:translateX (-20px) rotate(45deg);
+    }
+    40%{
+
+        transform:translateX (-20px) rotate(90deg);
+    }
+    60%{
+        
+       transform:translateX (-20px) rotate(135deg); 
+    }
+    80%{
+    
+        transform:translateX (-20px) rotate(180deg);
+    }
+    100%{
+        
+        top:110%;
+        transform:translateX (-20px) rotate(225deg);
+    }
+    }
+.leaf1{
+    transform: rotateX(180deg);
+}
+h2{
+    position:absolute ;
+    width:100%;
+    font-family: 'Courgette', cursive;
+    font-size:4em;
+    text-align:center;
+    transform:translate ;
+    color:#fff;
+    transform:translateY (-50%);
+}
+
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us </h1>
+  <!-- <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p> -->
+</div>
+
+<h3 style="text-align:center">Our Team</h3>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      
+      <div class="container">
+        <h3>Rufiya</h3>
+
+        <p>20311A05J3@sreenidhi.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h3>Shyamalika</h3>
+        <p>20311A12C2@sreenidhi.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     
+      <div class="container">
+        <h3>Srinidhi</h3>
+        <p>20311A1232@sreenidhi.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+    
+      
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h3>Niranjan</h3>
+        <p>20311a05e6@sreenidhi.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="column">
+    <div class="card">
+     
+      <div class="container">
+        <h3>Srinidhi</h3>
+        <p>20311A1232@sreenidhi.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div> -->
+  
+</div>
+
+
+<link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        
+    <section>
+    <h2>
+      </h2>
+  </div>
+     <div class="leaf">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf1">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     
+     <div class="leaf leaf2">
+     <div>  <img src="http://www.pngmart.com/files/1/Fall-Autumn-Leaves-Transparent-PNG.png" height="75px" width="75px"></img></div>
+      <div><img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Pictures-Collage-PNG.png" height="75px" width="75px"></img></div>
+      <div>  <img src="http://www.pngmart.com/files/1/Autumn-Fall-Leaves-Clip-Art-PNG.png" height="75px" width="75px" ></img></div>
+      <div><img  src="http://www.pngmart.com/files/1/Green-Leaves-PNG-File.png" height="75px" width="75px"></img></div>
+
+       <div> <img src="http://www.pngmart.com/files/1/Transparent-Autumn-Leaves-Falling-PNG.png" height="75px" width="75px"></img></div>
+     <div>   <img src="http://www.pngmart.com/files/1/Realistic-Autumn-Fall-Leaves-PNG.png" height="75px" width="75px"></div>
+     <div><img src="http://cdn.clipart-db.ru/rastr/autumn_leaves_025.png" height="75px" width="75px"></div>
+            
+     </div>
+     </section>
+</body>
+</html>
